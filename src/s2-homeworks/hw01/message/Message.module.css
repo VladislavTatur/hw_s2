@@ -1,31 +1,54 @@
 .message {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 20px;
 }
 
 .imageAndText {
-
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 50px;
+    position: relative;
 }
 
 .imageAndText img {
-
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    right: -45px;
 }
 
 .text {
-
+    background-color: #0066cc;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1.5rem;
+    position: relative;
+    max-width: 60%;
 }
 
 .text:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    border: 20px solid transparent;
+    border-bottom: 10px solid #0066cc; /* Цвет хвостика соответствует фону */
 
 }
 
 .name {
-
+    text-align: right;
 }
 
 .messageText {
-
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
 }
 
 .time {
-
+    text-align: right;
 }
